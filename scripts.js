@@ -3,7 +3,58 @@ let name = 'Adam';
 console.log(name + "'s apples")
 console.log('Hello world!')
 
-$('h1').text('We are having a 10 min break until 17:05')
+$('h1').text('JavaScript & DOM Material Review Examples')
+$('p').html('StayAtHome Coding Camp, Likes: <strong>13</strong>')
+
+$('strong').css('background', 'lime')
+$('strong').css('padding', '10px')
+
+let color = 'blue'
+
+$('h2').toggleClass('color')
+$('h2').toggleClass('color')
+
+
+$('ul').append('<li>My name is ' + name + '</li>')
+$('ul').append('<li id="special-list-item">Removable ' + name + '</li>')
+
+$('#special-list-item').remove()
+
+let addButtonHandler = (() => {
+    if ($('li').length < 5) {
+    $('ul').append('<li>My name is ' + name + '</li>')
+    }
+})
+
+$('#add-button').click(addButtonHandler)
+
+$('#remove-button').click(() => {
+    $('li:last-child').remove()
+})
+
+//if (condition) ... condition = true/false, nebo &&, ||
+
+let age = 12
+
+console.log('Starting the if')
+console.log('This is a sentence'.toLowerCase())
+
+if (age < 18) {
+    console.log('Not old enough to drink')
+} else {
+    console.log('Old enough to drink')
+}
+
+console.log('This is after the if')
+
+
+
+
+
+
+
+
+
 
 //This is a JavaScript comment ctrl+K+C
 
