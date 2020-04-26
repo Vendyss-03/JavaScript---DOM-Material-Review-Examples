@@ -85,9 +85,9 @@ colors.forEach((color) => {
     $('.box:last-child').css('background', color)
 })
 
-// i=index //
+// forloop: i=index //
 
-for (let i = 0; i < 100; i = i + 1) {
+for (let i = 0; i < 100; i++) {
     console.log(i);
 }
 
